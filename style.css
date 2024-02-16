@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  background: #020202;
+  cursor: pointer;
+}
+
+.navlinks{
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 1px solid white;
+}
+
+.navlinks a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+canvas{display:block}
+h1 {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: "Source Sans Pro";
+  font-size: 3em;
+  font-weight: 900;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+img{
+  position: absolute;
+  left: 31%;
+}

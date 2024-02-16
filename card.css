@@ -1,0 +1,139 @@
+  .navlinks{
+    background: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    border-radius: 1px solid white;
+}
+
+.navlinks a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+img{
+    position: relative;
+    width: 45%;
+    padding: 5px;
+}
+
+body{
+    background: #aaa9a9;
+    margin: 0px;	
+    z-index: -1;
+  }
+  p{
+    color: #161515;
+    font-family: Arial;
+    font-size: 120%;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    position: absolute;
+    left: 50%;
+    margin: 10px 0px;
+    top: 70px;
+    transform: translateX(-50%);
+  }
+          
+  #container, #shell{
+      width: 30%;
+    max-width: 500px;
+      height: 600px;
+      display: block;
+      position: relative;
+      z-index: 10;
+      margin: 50px 0px;
+    cursor: pointer;
+  }
+  #container{
+      width: 100%;
+      transform: rotateX(70deg);
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+  }
+  #shell{
+      left: 50%;
+      perspective: 1400px;
+      transform: translateX(-50%);	
+      transition: all .2s ease;
+    -webkit-transition: all .2s ease;		
+  }
+  .box{
+    width:100%;
+    height: 100%;  
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -webkit-backface-visibility: visible;
+    transform-origin: left;
+    transform-style: preserve-3D;
+    position: absolute;
+    top:0px; 
+    left: 0px;
+    border: 1px solid black;
+  }
+  div#box1{
+    background: url(didi.jpg);
+    background-size: 100% 100%;	
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: hidden;
+    z-index: 10;
+  }
+  
+  div#box1_back{
+    background: url(didi2.jpg);
+    transform: rotate3d(0, 1, 0, 0deg);
+    z-index: 0;
+  }
+  
+  div#box2{
+    background: rgb(93, 238, 182);	
+    transform: rotate3d(0, 1, 0, 0deg);
+    -webkit-backface-visibility: visible;
+    z-index: -1;
+  }
+  h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 5em;
+    color: #302e2e;
+    margin:0px;
+    position: relative;
+    top: 70%;
+    display: -webkit-box;
+    width: 100%;
+    text-align: center;
+    -webkit-box-pack: center;
+    font-weight: 200;
+    -webkit-user-select: none;
+    user-select: none;
+    background: transparent;
+  }
+  h6{
+      font-family: 'lobster', cursive;
+      font-size: 150%;
+      color: #528519;
+      margin:0px;
+      position: relative;
+      top: 20%;
+      display: -webkit-box;
+      width: 100%;
+      text-align: center;
+      -webkit-box-pack: center;
+      font-weight: 200;
+      -webkit-user-select: none;
+      user-select: none;
+    font-size: 3vh;
+  }	
+  
+  @media screen and (max-width: 1000px) {
+    #container, #shell{
+      width: 70%;
+      max-height: 70%;
+      top: 10%;
+    }
+    h1{
+      font-size: 10vh;
+    }
+  }
